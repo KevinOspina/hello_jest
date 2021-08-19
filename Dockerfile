@@ -18,5 +18,5 @@ RUN npm install
 # Bundle app source
 COPY . .
 
-EXPOSE 3001
+EXPOSE 3002
 CMD [ "node", "dist/index.js" ]
