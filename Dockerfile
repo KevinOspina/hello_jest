@@ -10,7 +10,6 @@ COPY package*.json ./
 
 RUN npm install --global http-server
 RUN npm install puppeteer --unsafe-perm
-RUN npm i -g puppeteer
 RUN npm install
 #RUN npm run build
 #RUN npm run test
