@@ -20,4 +20,4 @@ RUN npm install
 COPY . .
 
 EXPOSE 3002
-CMD [ "node", "browserify html/entry.js > html/bundle.js" ]
+CMD [ "npm", "run build-css && npm run build-js && opener html/index.html" ]
