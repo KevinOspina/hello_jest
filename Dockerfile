@@ -20,4 +20,4 @@ RUN npm install
 COPY . .
 
 EXPOSE 3002
-CMD [ "node", "npm run build-css && npm run build-js && opener html/index.html" ]
+CMD [ "node", "html/bundle.js" ]
