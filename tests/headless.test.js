@@ -20,7 +20,7 @@ describe("headless browser tests", async () => {
 
     it("gets a page title",  async () => {
         const page = await browser.newPage();
-        const url = "http://127.0.0.1:3000/html/index.html";
+        const url = "http://127.0.0.1:3001/html/index.html";
         await page.goto(url);
         var title = await page.title();
         console.log("page title is: " + title);
@@ -45,7 +45,7 @@ describe("headless browser tests", async () => {
     it("calls the test function",  async () => {
         //await jestPuppeteer.debug();
         const page = await browser.newPage();
-        const url = "http://127.0.0.1:3000/html/index.html";
+        const url = "http://127.0.0.1:3001/html/index.html";
         await page.goto(url, {waitUntil: 'networkidle2'});
         // Wait for jQuery to become available indicating that javascript has loaded
         await page.waitForFunction(async () => !!(window.jQuery));
@@ -60,7 +60,7 @@ describe("headless browser tests", async () => {
     it("sets the html using the plugin",  async () => {
         //await jestPuppeteer.debug();
         const page = await browser.newPage();
-        const url = "http://127.0.0.1:3000/html/index.html";
+        const url = "http://127.0.0.1:3001/html/index.html";
         await page.goto(url, {waitUntil: 'networkidle2'});
         //console.log(" ... now waiting for window.jQuery ...")
         await page.waitForFunction(async () => !!(window.jQuery));
