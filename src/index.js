@@ -4,6 +4,7 @@ if (!global.jQuery) {
   global.jQuery = require('jquery');
 }
 
+
 // my_plugin installs itself into the global jQuery object
 require("./my_plugin")
 
