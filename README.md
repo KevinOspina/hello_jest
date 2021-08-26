@@ -1,5 +1,5 @@
 
-# `hello_jest` A hello world example of unit testing and end-to-end testing of Javascript using Jest
+# `hello_jest` A hello world example of unit testing and end-to-end testing of Javascript using Jest.
 
 
 [![Build Status](https://travis-ci.org/AaronWatters/hello_jest.svg?branch=master)](https://travis-ci.org/AaronWatters/hello_jest)
